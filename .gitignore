@@ -1,0 +1,18 @@
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+*.moved-aside
+*.ips
+*.xcuserstate
+
+# SPM
+.build/
+.swiftpm/
+
+# xcodegen
+*.xcodeproj
+
+# macOS
+.DS_Store

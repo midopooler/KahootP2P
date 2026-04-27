@@ -1,0 +1,34 @@
+name: KahootP2P
+options:
+  bundleIdPrefix: com.kahootp2p
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15.0"
+
+packages:
+  CouchbaseLiteSwift:
+    url: https://github.com/couchbase/couchbase-lite-swift-ee.git
+    majorVersion: 4.0.3
+
+targets:
+  KahootP2P:
+    type: application
+    platform: iOS
+    sources: [QuizBlitz]
+    settings:
+      base:
+        INFOPLIST_FILE: QuizBlitz/App/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.kahootp2p.app
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1,2"
+    dependencies:
+      - package: CouchbaseLiteSwift
+    info:
+      path: QuizBlitz/App/Info.plist
+      properties:
+        CFBundleDisplayName: KahootP2P
+        UILaunchScreen: {}
+        NSLocalNetworkUsageDescription: "KahootP2P uses local networking to connect players for offline quiz games."
+        NSBonjourServices:
+          - "_quizblitz._tcp."
+          - "_quizblitz._tcp"
