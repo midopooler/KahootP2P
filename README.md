@@ -2,6 +2,10 @@
 
 A Kahoot-style multiplayer quiz game for iOS that works **completely offline** using peer-to-peer networking. No internet, no servers - just devices on the same local network.
 
+
+https://github.com/user-attachments/assets/2b2882bf-3083-451d-bc11-f318fcb76f21
+
+
 Built with **Couchbase Lite Enterprise** P2P replication and **SwiftUI**.
 
 ## How It Works
